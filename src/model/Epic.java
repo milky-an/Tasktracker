@@ -3,7 +3,6 @@ package model;
 import enums.Stage;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Epic extends Task {
     private ArrayList<Subtask> subtasks = new ArrayList<>();
