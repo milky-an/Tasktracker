@@ -2,11 +2,12 @@ import enums.Stage;
 import model.Epic;
 import model.Subtask;
 import model.Task;
+import service.Managers;
 import service.TaskManager;
 
 public class Main {
     public static void main(String[] args) {
-        TaskManager taskManager = new TaskManager();
+        TaskManager taskManager = Managers.getDefault();
 
         Task task1 = new Task("Задача 1", "Описание задачи 1");
         Task task2 = new Task("Задача 2", "Описание задачи 2");
